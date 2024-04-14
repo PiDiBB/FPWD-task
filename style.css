@@ -1,0 +1,278 @@
+/* global */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: Inconsolata;
+    color: #2c2c54;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+section {
+    padding: 96px 0;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-color: inherit;
+    background-position: 100% 0;
+    background-size: 300%;
+}
+
+/* Navigation */
+
+.navigation {
+    background-color: #4191dc;
+    padding: 12px 0;
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin: 0 36px 0 0;
+    position: relative;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigation a:hover {
+    color: #33d9b2;
+}
+
+.navigation ul ul li {
+    display: block;
+    margin: 0 0 12px 0;
+    display: none;
+}
+
+.navigation li:hover li {
+    display: block;
+    text-align: center;
+}
+
+.navigation li ul {
+    position: absolute;
+    background-color: #ffffff;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 12px;
+}
+
+.navigation li ul a {
+    color: #4191dc;
+    display: block;
+    padding: 0 24px;
+}
+
+/* splash */
+
+.splash {
+    background-color: #4191dc;
+    min-height: 500px;
+    display: flex;
+}
+
+.splash-inner {
+    margin: auto;
+    max-width: 70%;
+}
+
+.splash-inner h1 {
+    color: white;
+    margin: 0;
+    font-size: 72px;
+    word-spacing: -24px;
+    line-height: 1.2;
+}
+
+.splash-inner h2 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.page-title span {
+    font-family: Signika;
+}
+
+.btn-one {
+    border-color: #ffffff;
+    color: #ffffff;
+    background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+.btn-one:hover {
+    background-position: 0 100%;
+    color: #4191dc;
+    transition: all 1s;
+}
+
+/* our services */
+
+.our-services .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.our-services .flex-element {
+    flex: 0 0 33.333%;
+    position: relative;
+    padding: 0 20px;
+}
+
+.our-services .flex-element .number {
+    position: absolute;
+    font-size: 108px;
+    opacity: 0.25;
+    font-weight: 700;
+    top: -60px;
+    color: #33d9b2;
+}
+
+.btn-two {
+    border-color: #33d9b2;
+    color: #33d9b2;
+    background-image: linear-gradient(90deg, #33d9b2 50%, transparent 50%);
+}
+
+.btn-two:hover {
+    background-position: 0 100%;
+    color: #ffffff;
+    transition: all 1s;
+}
+
+.btn-three {
+    border-color: #ff5252;
+    color: #ff5252;
+    background-image: linear-gradient(90deg, #ff5252 50%, transparent 50%);
+}
+
+.btn-three:hover {
+    background-position: 0 100%;
+    color: #ffffff;
+    transition: all 1s;
+}
+
+.btn-four {
+    border-color: #4191dc;
+    color: #4191dc;
+    background-image: linear-gradient(90deg, #4191dc 50%, transparent 50%);
+}
+
+.btn-four:hover {
+    background-position: 0 100%;
+    color: #ffffff;
+    transition: all 1s;
+}
+
+/* contact us */
+
+.contact-us {
+    background-color: #4191dc;
+    color: #ffffff;
+}
+
+.contact-us .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-us .flex-element-1 {
+    flex: 2 0 0;
+    padding: 0 20px;
+}
+
+.contact-us .flex-element-2 {
+    flex: 1 0 0;
+}
+
+.contact-us .flex-element-2 p {
+    text-decoration: none;
+}
+
+/* footer */
+
+.footer ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}
+
+.footer li i {
+    font-size: 30px;
+    color: #ff5252;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li a {
+    font-size: 0;
+}
+
+/* media */
+
+@media (max-width: 767px) {
+    .container {
+        text-align: center;
+    }
+    
+    .splash-inner {
+        text-align: center;
+    }
+
+    .splash-inner h1 {
+        color: white;
+        margin: 0;
+        font-size: 24px;
+        word-spacing: 0px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .our-services .flex-element {
+        padding: 20px;
+    }
+
+    .our-services .flex-element .number {
+        display: none;
+    }
+    
+}
